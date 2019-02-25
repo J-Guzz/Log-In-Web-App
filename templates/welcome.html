@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--Route page, gives the user options to log in or create account.-->
+{% extends "base.html" %}
+{% block content %}
+<div>
+  <header>
+    <h1>Welcome!</h1>
+  </header>
+</div>
+
+<body>
+  <div>
+    <b1>
+      <p>Patients:</p>
+      <p>Click <a href="/login">here</a> to login.</p>
+      <p>Therapists:</p>
+      <p>Click <a href="/therapistLogin">here</a> to login.</p>
+    </b1>
+    <p>Don't have an account?</p>
+    <p>Click <a href="/newPatient">here</a> to add a new patient.</p>
+    <p>Click <a href="/newTherapist"> here<a> to add a new therapist.</p>
+  </div>
+</body>
+{% endblock %}

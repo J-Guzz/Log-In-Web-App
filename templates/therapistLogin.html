@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--Login page for therpaist.-->
+
+{% extends "base.html" %}
+{% block content %}
+
+<header>
+  <h1>Therapist Login</h1>
+</header>
+
+<body>
+  <form action="" method="post">
+    <input type="text" placeholder="Username" name="username" value="{{
+      request.form.username }}">
+     <input type="password" placeholder="Password" name="password" value="{{
+      request.form.password }}">
+    <input class="btn btn-default" type="submit" value="Login">
+  </form>
+  
+  <p>Click <a href="/newTherapist">here</a> to create a new therapist account.</p>
+  <p>Click <a href="/welcome">here</a> to return to the main menu.</p>
+</body>
+
+{% endblock %}

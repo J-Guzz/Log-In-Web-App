@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--Shows a list of patients from the database.-->
+
+{% extends "base.html" %}
+{% block content %}
+
+<header>View Patients</header>
+<br>
+<body>
+	<p><a href="/searchPatient">Search</a> for a patient.</p>
+	<p>Current patients in our database:</p>
+	{% for post in posts %}
+		<strong>Username:</strong> {{post.username}}
+		<strong>Email:</strong> {{post.email}} <br>
+
+
+	{% endfor%}
+
+  <p><a href="/therapistMain">Return</a> to the main menu.</p>
+</body>
+
+{% endblock %}

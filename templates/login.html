@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Patient log in page -->
+
+{% extends "base.html" %}
+{% block content %}
+<header>
+  <h1>Patient Login</h1>
+</header>
+<body>
+  <form action="" method="post">
+    <input type="text" placeholder="Username" name="username" value="{{
+      request.form.username }}">
+     <input type="password" placeholder="Password" name="password" value="{{
+      request.form.password }}">
+    <input class="btn btn-default" type="submit" value="Login">
+  </form>
+  <p>Don't have an account?</p>
+  <p>Click <a href="/newPatient">here</a> to create a new patient account.</p>
+</body>
+<footer>
+  <p><a href="/welcome">Return</a> to the main menu.</p>
+</footer>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--Assigning an intervention to a patient.-->
+
+{% extends "base.html" %}
+{% block content %}
+<header>
+  <h1>Assign Intervention</h1>
+</header>
+
+<body>
+  <form action="" method="post">
+      <input type="text" placeholder="Username" name="username" value="{{
+  			request.form.username}}">
+  	<br></br>
+  	<p>Intervention 1</p>
+  	<input type="radio" name="intervention1" value="yes">Yes
+  	<input type="radio" name="intervention1" value="no">No
+
+  	<p>Intervention 2 </p>
+  	<input type="radio" name="intervention2" value='yes'>Yes
+  	<input type="radio" name="intervention2" value='no'>NO
+
+  	<p>Intervention 3 </p>
+  	<input type="radio" name="intervention3" value='yes'>Yes
+  	<input type="radio" name="intervention3" value='no'>No
+  	<br></br>
+  	<input class="btn btn-default" type="submit" value="submit">
+  </form>
+</body>
+
+<footer>
+  <p>Click <a href="/therapistMain">here</a> to return to the main menu.</p>
+<footer>
+{% endblock %}

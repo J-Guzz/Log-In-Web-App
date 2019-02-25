@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--Main menu for the patient.-->
+{% extends "base.html" %}
+{% block content %}
+
+<header>Patient Main Menu</header>
+
+<body>
+	{% for post in posts %}
+		<strong>Username:</strong> {{post.username}} <br>
+		<strong>Intervention 1:</strong> {{post.intervention1}} <br>
+		<strong>Intervention 2:</strong> {{post.intervention2}}<br>
+		<strong>Intervention 3:</strong> {{post.intervention3}} <br>
+
+	{% endfor%}
+  <p>Click <a href="/logout">here</a> to logout.</p>
+</body>
+
+{% endblock %}

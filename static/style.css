@@ -1,0 +1,12 @@
+DOCTYPE CSS
+body {
+  font-family: courier;
+  text-align: center;
+}
+h1 {
+  background-color: #890d0b;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}

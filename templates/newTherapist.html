@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--Page for creating a new therapist and adding them to the database.-->
+{% extends "base.html" %}
+{% block content %}
+
+<header>
+  <h1>New Therapist</h1>
+</header>
+
+<body>
+  <form action="" method="post">
+
+      <input type="text" placeholder="Username" name="username" value="{{
+  			request.form.username}}">
+  	<br></br>
+
+      <input type="text" placeholder="Name" name="name" value="{{
+  			request.form.name}}">
+  	<br></br>
+
+  	<input type="password" placeholder="Password" name="password" value="{{
+  			request.form.password}}"
+  	<br></br>
+
+  	<input type="email" placeholder="Email" name="email" value="{{
+  			request.form.email}}">
+  	<br></br>
+  	<input type="text" placeholder="Admin Code" name="code" value="{{
+  			request.form.code}}">
+  	<br></br>
+  	<input class="btn btn-default" type="submit" value="submit">
+  </form>
+</body>
+
+<footer>
+  <p>Click <a href="/login">here</a> to return to login.</p>
+<footer>
+{% endblock %}

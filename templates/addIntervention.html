@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!-- Was used in development-->
+<!--Not in final Project-->
+{% extends "base.html" %}
+{% block content %}
+<header>
+  <h1> Add an Intervention </h1>
+</header>
+<body>
+  <p>Please choose the Patient</p>
+
+<form action="/action_page.ph">
+  <select name="Patients">
+    <option value="Patient1">Patient1</option>
+    <option value="Patient2">Patient2</option>
+    <option value="Patient3">Patient3</option>
+    <option value="Patient4">Patient4</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+</body>
+<p>Please choose the Intervention Session</p>
+<section>
+  <p><button class="bInter"type="submit">Connecting Letters</button>
+  <button class="bInter" type="submit">Joining Shapes Activity</button></p>
+  <p><button class="bInter" type="submit">Matricies Activity</button>
+  <button class="bInter" type="submit">Related Memory Activity</button></p>
+  <p><button class="bInter" type="submit">Shape Design Activity</button>
+  <button class="bInter" type="submit">Window Sequencing Activities</button></p>
+  <p><button class="bInter" type="submit">Transportation Matrices</button>
+  <button class="bInter" type="submit">Tracking</button></p>
+</section>
+<footer>
+  <p>Click <a href="/main">here</a> to return to the main menu.</p>
+{% endblock %}

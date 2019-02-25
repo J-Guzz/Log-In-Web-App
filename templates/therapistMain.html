@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--Main menu for therapist.-->
+{% extends "base.html" %}
+{% block content %}
+
+<header>Therapist Main Menu</header>
+
+<body>
+	{% for post in posts %}
+		<strong>Username:</strong> {{post.username}} <br>
+		<strong>Intervention 1:</strong> {{post.intervention1}} <br>
+		<strong>Intervention 2:</strong> {{post.intervention2}}<br>
+		<strong>Intervention 3:</strong> {{post.intervention3}} <br>
+	{% endfor%}
+
+  <p>Click <a href="/assignIntervention">here</a> to assign an intervention to a patient.</p>
+  <p>Click <a href="/viewPatients">here</a> to view all patients.</p>
+  <p>Click <a href="/searchPatient">here</a> to search for a patient.</p>
+</body>
+
+<footer>
+	<p>Click <a href="/logout">here</a> to logout.</p>
+</footer>
+
+{% endblock %}

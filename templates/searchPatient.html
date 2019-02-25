@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--Search for a patient in the database.-->
+
+{% extends "base.html" %}
+{% block content %}
+<header>
+  <h1>Search For A Patient</h1>
+</header>
+<body>
+  <p>Enter in the patients Username:</p>
+  <form action="" method="post">
+      <input type="text" placeholder="Username" name="username" value="{{
+  			request.form.username}}">
+  	<br></br>
+  	<input class="btn btn-default" type="submit" value="Search for Patient">
+  	<br>
+  	{% for post in posts %}
+  		<strong>Username:</strong> {{post.username}} <br>
+  		<strong>intervention1:</strong> {{post.intervention1}} <br>
+  		<strong>intervention2:</strong> {{post.intervention2}}<br>
+  		<strong>intervention3:</strong> {{post.intervention3}}<br>
+
+
+  	{% endfor%}
+  </form>
+</body>
+<footer>
+  <p><a href="/therapistMain">Return</a> to the main menu.</p>
+<footer>
+{% endblock %}
